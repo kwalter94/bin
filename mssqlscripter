@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker run -it -v "$(pwd):/var/lib/mssql-scripter/data" --rm kwalter94/mssqlscripter:latest $@
+docker run -it -v "$(pwd):/var/lib/mssql-scripter/data" --rm kwalter94/mssqlscripter:latest "$@"
  

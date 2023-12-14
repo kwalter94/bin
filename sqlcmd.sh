@@ -2,4 +2,4 @@
 
 set -eu
 
-docker exec -it mssqlserver-2019 /opt/mssql-tools/bin/sqlcmd "$@"
+docker run -it mcr.microsoft.com/mssql/server:2019-latest /opt/mssql-tools/bin/sqlcmd "$@"
